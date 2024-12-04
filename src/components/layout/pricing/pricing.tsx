@@ -44,7 +44,7 @@ function Pricing() {
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            className="text-3xl sm:text-4xl font-bold text-foreground mb-4"
+            className="text-3xl sm:text-4xl font-bold text-foreground mb-4 max-w-xl mx-auto"
           >
             Choose the Perfect Plan for Your Security Needs
           </motion.h2>

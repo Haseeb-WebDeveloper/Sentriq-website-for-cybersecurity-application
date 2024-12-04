@@ -10,7 +10,7 @@ const clients = [
   { name: 'Company 3', logo: '/comapny-3.png' },
   { name: 'Company 4', logo: '/comapny-4.png' },
   { name: 'Company 5', logo: '/comapny-5.png' },
-  { name: 'Company 6', logo: '/comapny-6.png' },
+//   { name: 'Company 6', logo: '/comapny-6.png' },
   { name: 'Company 7', logo: '/comapny-7.png' },
 ];
 

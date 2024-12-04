@@ -1,22 +1,22 @@
-import React from 'react'
-import type { Metadata } from "next";
+'use client';
 
-type Props = {}
+import React from 'react';
+import PricingHero from '@/components/layout/pricing/hero';
+import Pricing from '@/components/layout/pricing/pricing';
+import CommonFeatures from '@/components/layout/pricing/common-features';
+import FAQPreview from '@/components/layout/pricing/faq-preview';
+import PricingCTA from '@/components/layout/pricing/cta';
 
-function Pricing({}: Props) {
-
-    const metadata: Metadata = {
-        title: "Pricing - SentrIQ",
-        description: "Pricing for SentrIQ, the intelligent cyber security assistant powered by AI."
-    }
-
+function PricingPage() {
   return (
-    <section className="container mx-auto min-h-[80vh]  flex flex-col items-center justify-center">
-            <div className="flex flex-col items-center justify-center">
-                <h1 className="text-4xl font-bold text-foreground mt-10">Under Construction...</h1>
-         </div>
-    </section>
-  )
+    <main className="pt-20">
+      <PricingHero />
+      <Pricing />
+      <CommonFeatures />
+      <FAQPreview />
+      <PricingCTA />
+    </main>
+  );
 }
 
-export default Pricing
+export default PricingPage;

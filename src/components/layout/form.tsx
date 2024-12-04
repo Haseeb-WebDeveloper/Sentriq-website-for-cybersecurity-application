@@ -11,7 +11,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { Sparkles } from 'lucide-react';
+import { Link, Sparkles } from 'lucide-react';
 import { formContent } from '@/data/constant';
 
 const fadeIn = {
@@ -61,7 +61,7 @@ function WaitlistForm() {
             </div>
             <h3 className="text-2xl font-bold text-foreground mb-3">Welcome to SentrIQ!</h3>
             <p className="text-muted-foreground mb-6">
-              Thank you for joining our waitlist. We'll be in touch soon with your exclusive early access.
+              Thank you for joining our waitlist. We&apos;ll be in touch soon with your exclusive early access.
             </p>
             <div className="flex justify-center">
               <Button 
@@ -210,10 +210,7 @@ function WaitlistForm() {
               </Button>
 
               <p className="text-xs text-center text-muted-foreground">
-                By joining, you agree to our{' '}
-                <a href="/terms" className="text-primary hover:underline">Terms</a>
-                {' '}and{' '}
-                <a href="/privacy" className="text-primary hover:underline">Privacy Policy</a>
+                By joining, you agree to our Terms and Privacy Policy
               </p>
             </motion.form>
           </motion.div>

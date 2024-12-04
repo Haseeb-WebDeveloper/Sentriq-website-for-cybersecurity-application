@@ -1,8 +1,6 @@
 import React from 'react'
 
-type Props = {}
-
-function Contact({}: Props) {
+function Contact() {
   return (
     <section className="container mx-auto min-h-[80vh]  flex flex-col items-center justify-center">
             <div className="flex flex-col items-center justify-center">
