@@ -54,7 +54,7 @@ const staggerContainer = {
 
 function FAQ() {
   return (
-    <section className="py-20 relative overflow-hidden">
+    <section className="py-20 my-12 relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-foreground/[0.02]" />
       <div className="absolute inset-0">

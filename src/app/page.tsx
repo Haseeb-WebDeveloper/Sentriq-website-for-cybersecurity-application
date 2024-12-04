@@ -5,6 +5,8 @@ import OurClients from "@/components/layout/our_clients";
 // import Pricing from "@/components/layout/pricing";
 import Form from "@/components/layout/form";
 import FAQ from "@/components/layout/faq";
+import Comparison from "@/components/layout/comparison";
+import HowItWorks from "@/components/layout/how_it_works";
 
 export default function Home() {
   return (
@@ -15,6 +17,8 @@ export default function Home() {
       <FAQ />
       {/* <Pricing /> */}
       {/* <CallToAction /> */}
+      <Comparison />
+      <HowItWorks />
       <Form />
     </>
   );

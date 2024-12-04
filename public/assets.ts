@@ -9,4 +9,5 @@ export const assets = {
     software: '/software.png',
     logo1: '/logo-1.png',
     logo2: '/logo-2.png',
+    mockup: '/mockup.png',
 }
