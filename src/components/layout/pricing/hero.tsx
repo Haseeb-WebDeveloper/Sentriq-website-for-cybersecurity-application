@@ -6,8 +6,8 @@ import { fadeIn } from '@/lib/animations';
 
 function PricingHero() {
   return (
-    <section className=" relative overflow-hidden ">
-      <div className=" py-16 container mx-auto px-4 bg-foreground rounded-lg ">
+    <section className="px-4  relative overflow-hidden ">
+      <div className=" py-16 container mx-auto bg-foreground rounded-lg ">
         <motion.div
           initial="hidden"
           animate="visible"

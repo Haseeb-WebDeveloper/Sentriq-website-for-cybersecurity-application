@@ -28,7 +28,7 @@ function Navbar() {
     <motion.header
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className={`fixed top-0 w-full z-50 transition-all duration-300 bg-foreground/5 backdrop-blur-xl border-b border-border ${
+      className={`fixed top-0 w-full z-50 transition-all duration-300 bg-background border-b border-border ${
         isScrolled ? '' : ''
       }`}
     >

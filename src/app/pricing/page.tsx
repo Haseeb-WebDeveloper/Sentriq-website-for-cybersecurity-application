@@ -9,7 +9,7 @@ import PricingCTA from '@/components/layout/pricing/cta';
 
 function PricingPage() {
   return (
-    <main className="pt-20">
+    <main className="pt-20 ">
       <PricingHero />
       <Pricing />
       <CommonFeatures />
