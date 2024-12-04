@@ -6,10 +6,14 @@ import { motion } from 'framer-motion';
 import { ModeToggle } from '@/components/ui/theme-toggle';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
+import { assets } from '../../../public/assets';
+import Image from 'next/image';
+import { useTheme } from 'next-themes';
 
 function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { theme } = useTheme();
 
   // Handle scroll effect
   useEffect(() => {
@@ -29,25 +33,24 @@ function Navbar() {
       }`}
     >
       <nav className="container mx-auto px-6">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-16 ">
           {/* Logo */}
           <Link 
             href="/" 
-            className="flex items-center space-x-2"
+            className=""
           >
-            <span className="text-xl font-bold bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
-              SentrIQ
-            </span>
+            <Image 
+              src={theme === 'dark' ? assets.logo1 : assets.logo2} 
+              alt="SentrIQ Logo" 
+              width={110} 
+              height={120} 
+              className=" h-full"
+              priority
+            />
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link 
-              href="/features" 
-              className="text-muted-foreground hover:text-foreground transition-colors"
-            >
-              Features
-            </Link>
             <Link 
               href="/pricing" 
               className="text-muted-foreground hover:text-foreground transition-colors"
@@ -59,6 +62,12 @@ function Navbar() {
               className="text-muted-foreground hover:text-foreground transition-colors"
             >
               About
+            </Link>
+            <Link 
+              href="/contact" 
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
+              Contact
             </Link>
           </div>
 
@@ -112,9 +121,6 @@ function Navbar() {
                 About
               </Link>
               <div className="pt-4 space-y-2">
-                <Button variant="outline" className="w-full justify-center">
-                  Sign In
-                </Button>
                 <Button className="w-full justify-center">
                   Get Started
                 </Button>

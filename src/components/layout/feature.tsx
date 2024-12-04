@@ -2,40 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Shield, Brain, Zap, Lock, Bell, Fingerprint } from 'lucide-react';
-
-const features = [
-  {
-    icon: Shield,
-    title: "Real-time Protection",
-    description: "Advanced threat detection and prevention system that works 24/7 to keep your devices secure."
-  },
-  {
-    icon: Brain,
-    title: "AI-Powered Analysis",
-    description: "Smart security analysis using cutting-edge artificial intelligence to predict and prevent threats."
-  },
-  {
-    icon: Zap,
-    title: "Instant Response",
-    description: "Lightning-fast automated responses to security threats, ensuring immediate protection."
-  },
-  {
-    icon: Lock,
-    title: "Privacy First",
-    description: "Your data privacy is our priority. End-to-end encryption and secure storage for all your information."
-  },
-  {
-    icon: Bell,
-    title: "Smart Alerts",
-    description: "Intelligent notification system that alerts you only when something needs your attention."
-  },
-  {
-    icon: Fingerprint,
-    title: "Biometric Security",
-    description: "Advanced biometric authentication for an extra layer of security and convenience."
-  }
-];
+import { features } from '@/data/constant';
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -60,7 +27,7 @@ const itemVariants = {
 
 function Feature() {
   return (
-    <section className="py-24 bg-background relative overflow-hidden">
+    <section className="py-12 bg-background relative overflow-hidden">
       {/* Background Decorations */}
       <div className="absolute inset-0 bg-grid-primary/[0.02] -z-10" />
       <div className="absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-primary/[0.02] to-transparent -z-10" />
@@ -96,13 +63,13 @@ function Feature() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
         >
           {features.map((feature, index) => (
             <motion.div
               key={index}
               variants={itemVariants}
-              className="group relative bg-background/50 border border-border/50 rounded-xl p-6 hover:border-primary/20 transition-colors"
+              className="group relative bg-foreground/[0.03] border border-border/50 rounded-xl p-6 hover:border-primary/20 transition-colors"
             >
               {/* Hover Effect */}
               <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-primary/[0.02] to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-xl" />

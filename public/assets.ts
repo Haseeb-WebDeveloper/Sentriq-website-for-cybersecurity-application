@@ -6,4 +6,7 @@ export const assets = {
     company5: '/company-5.png',
     company6: '/company-6.png',
     company7: '/company-7.png',
+    software: '/software.png',
+    logo1: '/logo-1.png',
+    logo2: '/logo-2.png',
 }
