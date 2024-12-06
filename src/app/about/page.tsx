@@ -1,15 +1,20 @@
-import React from "react";
+'use client';
 
-function About() {
+import React from 'react';
+import AboutHero from '@/components/layout/about/hero';
+import AboutUs from '@/components/layout/about/about_us';
+import Values from '@/components/layout/about/values';
+import Stats from '@/components/layout/about/stats';
+
+function AboutPage() {
   return (
-    <section className="container mx-auto min-h-[80vh]  flex flex-col items-center justify-center">
-      <div className="flex flex-col items-center justify-center">
-        <h1 className="text-4xl font-bold text-foreground mt-10">
-          Under Construction...
-        </h1>
-      </div>
-    </section>
+    <main className="pt-20">
+      <AboutHero />
+      <AboutUs />
+      <Values />
+      <Stats />
+    </main>
   );
 }
 
-export default About;
+export default AboutPage;
